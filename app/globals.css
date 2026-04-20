@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* VidhyaKendra Brand Colors - Exact Hex Values */
+    --vk-golden-yellow: 42 85% 59%;     /* #F1AF37 */
+    --vk-warm-orange: 19 69% 52%;       /* #D87331 */
+    --vk-amber: 32 70% 53%;             /* #D88931 */
+    --vk-teal-blue: 195 76% 44%;        /* #1897C6 */
+    --vk-aqua-blue: 184 50% 59%;        /* #67BAC3 */
+    --vk-dark-grey: 240 3% 32%;         /* #535359 */
+    --vk-muted-grey: 40 3% 60%;         /* #9B9A94 */
+    --vk-soft-beige: 36 33% 82%;        /* #DDD2C1 */
+    --vk-white: 0 0% 100%;              /* #FEFEFE */
+
+    /* Base Theme Tokens using VK Colors */
+    --background: 0 0% 97%;
+    --foreground: 240 3% 32%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 3% 32%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 3% 32%;
+    --primary: 195 76% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 85% 59%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 36 33% 82%;
+    --muted-foreground: 240 3% 32%;
+    --accent: 19 69% 52%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 36 33% 88%;
+    --input: 36 33% 88%;
+    --ring: 195 76% 44%;
+    --chart-1: 195 76% 44%;
+    --chart-2: 42 85% 59%;
+    --chart-3: 19 69% 52%;
+    --chart-4: 184 50% 59%;
+    --chart-5: 32 70% 53%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 3% 32%;
+    --sidebar-primary: 195 76% 44%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 36 33% 95%;
+    --sidebar-accent-foreground: 240 3% 32%;
+    --sidebar-border: 36 33% 88%;
+    --sidebar-ring: 195 76% 44%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-muted rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-[#1897C6] to-[#67BAC3] rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply from-[#1897C6]/80 to-[#67BAC3]/80;
+  }
+}
