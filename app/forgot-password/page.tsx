@@ -126,7 +126,7 @@ const handleResetPassword = async (e: React.FormEvent) => {
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <img
-            src="/vidhyakendra-logo.png"
+            src="/Vidhyakendra-Logo.png"
             alt="VidhyaKendra"
             className="h-16 w-auto object-contain"
           />

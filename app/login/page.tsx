@@ -154,7 +154,7 @@ export default function LoginPage() {
         <div className="w-full max-w-md">
           <div className="mb-8 flex justify-center lg:hidden">
             <img
-              src="/vidhyakendra-logo.png"
+              src="/Vidhyakendra-Logo.png" 
               alt="VidhyaKendra"
               className="h-14 w-auto object-contain"
             />
