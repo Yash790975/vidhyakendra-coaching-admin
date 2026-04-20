@@ -120,7 +120,7 @@ export default function LoginPage() {
         </div>
         <div className="relative z-10">
           <img
-            src="/vidhyakendra-logo.png"
+            src="/Vidhyakendra-Logo.png"
             alt="VidhyaKendra"
             className="h-16 w-auto object-contain brightness-0 invert drop-shadow-lg"
           />
